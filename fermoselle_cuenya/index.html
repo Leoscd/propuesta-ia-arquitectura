@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Fermoselle Cuenya - Soy Leo_AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1>Proyecto Fermoselle Cuenya</h1>
+                    <span class="powered-by">by Soy Leo_AI</span>
+                </div>
+                <div class="nav-contact">
+                    <a href="mailto:leodiazdt@gmail.com" class="contact-btn">Contactar</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Optimización con IA para Estudios de Arquitectura</h2>
+                <p class="hero-subtitle">Reducí el tiempo de adaptación de nuevos empleados de 3.5 meses a 1 mes con herramientas de IA implementadas</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">$2,738 USD</span>
+                        <span class="stat-label">Costo por rotación actual</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3.5 meses</span>
+                        <span class="stat-label">Tiempo adaptación tradicional</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">71%</span>
+                        <span class="stat-label">Reducción de tiempo propuesta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h3 class="section-title">El Problema Real</h3>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <i class="fas fa-users problem-icon"></i>
+                    <h4>Alta Rotación</h4>
+                    <p>2 rotaciones anuales en equipo de 8 personas</p>
+                    <span class="cost">Costo: $5,476 USD/año</span>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-clock problem-icon"></i>
+                    <h4>Adaptación Lenta</h4>
+                    <p>3.5 meses para que junior sea productivo</p>
+                    <span class="cost">Productividad perdida: $500 USD</span>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-fire problem-icon"></i>
+                    <h4>Apagando Incendios</h4>
+                    <p>Gerentes dedicando tiempo a capacitar</p>
+                    <span class="cost">Oportunidades perdidas: $375 USD</span>
+                </div>
+            </div>
+            <div class="total-cost">
+                <h4>Costo Total Anual: <span>$8,176 USD</span> en pérdidas evitables</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers">
+        <div class="container">
+            <h3 class="section-title">Soluciones Propuestas</h3>
+            <div class="offers-grid">
+                
+                <!-- Offer 1 -->
+                <div class="offer-card">
+                    <div class="offer-header">
+                        <h4>Curso de IA</h4>
+                        <span class="offer-price">$1,000 USD</span>
+                        <p class="offer-subtitle">Capacitación para 10 personas</p>
+                    </div>
+                    <div class="offer-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>5 módulos completos (10 horas)</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Material: Videos, PDFs, templates</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Prompts específicos para arquitectura</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Acceso permanente a contenido</span>
+                        </div>
+                    </div>
+                    <button class="toggle-details" onclick="toggleDetails('offer1')">
+                        Ver detalles <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="offer-details" id="offer1">
+                        <h5>Módulos incluidos:</h5>
+                        <ul>
+                            <li>Fundamentos IA para Arquitectura</li>
+                            <li>Optimización de Diseños</li>
+                            <li>Gestión de Información</li>
+                            <li>Presupuestos Automatizados</li>
+                            <li>Apps Locales y Automatización</li>
+                        </ul>
+                        <p><strong>Cronograma:</strong> 2 clases por semana durante 2.5 semanas</p>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card featured">
+                    <div class="offer-badge">Más Popular</div>
+                    <div class="offer-header">
+                        <h4>Implementación Guiada</h4>
+                        <span class="offer-price">$1,500 USD</span>
+                        <p class="offer-subtitle">Curso + Acompañamiento</p>
+                    </div>
+                    <div class="offer-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Todo lo de Oferta 1</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>10 horas de acompañamiento</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Implementación en casos reales</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Resolución problemas específicos</span>
+                        </div>
+                    </div>
+                    <button class="toggle-details" onclick="toggleDetails('offer2')">
+                        Ver detalles <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="offer-details" id="offer2">
+                        <h5>Acompañamiento incluye:</h5>
+                        <ul>
+                            <li>Implementación práctica con casos del estudio</li>
+                            <li>Optimización de workflows existentes</li>
+                            <li>Soporte directo para dudas específicas</li>
+                            <li>Adaptación a contexto particular</li>
+                        </ul>
+                        <p><strong>Cronograma:</strong> 2 meses completos de seguimiento</p>
+                    </div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card premium">
+                    <div class="offer-badge premium-badge">Solución Integral</div>
+                    <div class="offer-header">
+                        <h4>Sistema Completo</h4>
+                        <span class="offer-price">$2,500 USD</span>
+                        <p class="offer-subtitle">Todo + Dashboard + Onboarding</p>
+                    </div>
+                    <div class="offer-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Todo lo de Ofertas 1 y 2</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Sistema de Onboarding automatizado</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Dashboard gerencial interactivo</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>1 mes de garantía adicional</span>
+                        </div>
+                    </div>
+                    <button class="toggle-details" onclick="toggleDetails('offer3')">
+                        Ver detalles <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="offer-details" id="offer3">
+                        <h5>Sistema Onboarding:</h5>
+                        <ul>
+                            <li>Mapeo de roles específicos del estudio</li>
+                            <li>Guías PDF interactivas por rol</li>
+                            <li>Videos de soporte para tareas críticas</li>
+                            <li>Sistema autogestionable para futuros empleados</li>
+                        </ul>
+                        <h5>Dashboard Gerencial:</h5>
+                        <ul>
+                            <li>Métricas de rendimiento en tiempo real</li>
+                            <li>Formularios de medición automatizados</li>
+                            <li>Sistema de alertas de productividad</li>
+                            <li>Base de datos integrada</li>
+                        </ul>
+                        <p><strong>Garantía:</strong> 1 mes adicional de seguimiento si no se ven resultados</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="roi-calculator">
+        <div class="container">
+            <h3 class="section-title">Calculadora de ROI</h3>
+            <div class="calculator-card">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label>Número de empleados:</label>
+                        <input type="number" id="employees" value="8" min="1" max="50">
+                    </div>
+                    <div class="input-group">
+                        <label>Horas promedio diarias por empleado:</label>
+                        <input type="number" id="hours" value="5" min="1" max="12">
+                    </div>
+                    <div class="input-group">
+                        <label>Horas ahorradas por día con IA:</label>
+                        <input type="number" id="saved-hours" value="1" min="0.5" max="4" step="0.5">
+                    </div>
+                    <div class="input-group">
+                        <label>Costo por hora empleado (USD):</label>
+                        <input type="number" id="hourly-cost" value="4.5" min="1" max="20" step="0.1">
+                    </div>
+                </div>
+                <div class="calculator-results">
+                    <h4>Resultados Proyectados:</h4>
+                    <div class="result-item">
+                        <span>Ahorro semanal:</span>
+                        <span id="weekly-savings">$180 USD</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Ahorro mensual:</span>
+                        <span id="monthly-savings">$720 USD</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Ahorro anual:</span>
+                        <span id="annual-savings">$8,640 USD</span>
+                    </div>
+                    <div class="result-item roi-highlight">
+                        <span>ROI primer año:</span>
+                        <span id="roi-result">244%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline">
+        <div class="container">
+            <h3 class="section-title">Cronograma de Implementación</h3>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h4>Semanas 1-2</h4>
+                        <p>Diagnóstico + Fundamentos IA + Optimización de Diseños</p>
+                        <span>6 horas de capacitación + acompañamiento</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h4>Semanas 3-4</h4>
+                        <p>Gestión de Información + Presupuestos Automatizados</p>
+                        <span>6 horas de capacitación + acompañamiento</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h4>Semanas 5-6</h4>
+                        <p>Apps Locales + Desarrollo Sistema Onboarding</p>
+                        <span>5 horas capacitación + desarrollo paralelo</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h4>Semanas 7-8</h4>
+                        <p>Consolidación + Entrega Dashboard + Sistema Onboarding</p>
+                        <span>8 horas de acompañamiento final</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h3>¿Listo para optimizar tu estudio?</h3>
+                <p>Contactame para agendar una reunión y definir la mejor propuesta para Fermoselle Cuenya</p>
+                <div class="contact-info">
+                    <a href="mailto:leodiazdt@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        leodiazdt@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/leo-iml" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://instagram.com/soy.leo_ai" target="_blank" class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        @soy.leo_ai
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Soy Leo_AI - Consultoría en IA para Arquitectura</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
