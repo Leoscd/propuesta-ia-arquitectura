@@ -27,50 +27,11 @@ function toggleDetails(offerId) {
     }
 }
 
-// ROI Calculator
-function calculateROI() {
-    const employees = parseFloat(document.getElementById('employees').value) || 8;
-    const hours = parseFloat(document.getElementById('hours').value) || 5;
-    const savedHours = parseFloat(document.getElementById('saved-hours').value) || 1;
-    const hourlyCost = parseFloat(document.getElementById('hourly-cost').value) || 4.5;
-    
-    // Calculations
-    const dailySavings = employees * savedHours * hourlyCost;
-    const weeklySavings = dailySavings * 5; // 5 working days
-    const monthlySavings = weeklySavings * 4; // 4 weeks
-    const annualSavings = monthlySavings * 12; // 12 months
-    
-    // Investment amount (using highest offer as reference)
-    const investment = 2500;
-    const roi = ((annualSavings - investment) / investment * 100);
-    
-    // Update display
-    document.getElementById('weekly-savings').textContent = `$${weeklySavings.toFixed(0)} USD`;
-    document.getElementById('monthly-savings').textContent = `$${monthlySavings.toFixed(0)} USD`;
-    document.getElementById('annual-savings').textContent = `$${annualSavings.toFixed(0)} USD`;
-    document.getElementById('roi-result').textContent = `${roi.toFixed(0)}%`;
-    
-    // Change color based on ROI
-    const roiElement = document.getElementById('roi-result');
-    if (roi > 200) {
-        roiElement.style.color = '#10b981';
-    } else if (roi > 100) {
-        roiElement.style.color = '#f59e0b';
-    } else {
-        roiElement.style.color = '#ef4444';
-    }
-}
+// ROI Calculator (DEPRECATED - replaced with Benefits section)
+// Keeping for compatibility, but no longer used in the interface
 
 // Add event listeners when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // Calculator inputs
-    const calculatorInputs = document.querySelectorAll('#employees, #hours, #saved-hours, #hourly-cost');
-    calculatorInputs.forEach(input => {
-        input.addEventListener('input', calculateROI);
-    });
-    
-    // Initial calculation
-    calculateROI();
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
