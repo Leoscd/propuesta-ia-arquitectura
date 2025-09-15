@@ -28,30 +28,37 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">Optimización con IA para Estudios de Arquitectura</h2>
-                <p class="hero-subtitle">Reducí el tiempo de adaptación de nuevos empleados de 3.5 meses a 1 mes con herramientas de IA implementadas</p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">$2,738 USD</span>
-                        <span class="stat-label">Costo por rotación actual</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">3.5 meses</span>
-                        <span class="stat-label">Tiempo adaptación tradicional</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">1 mes</span>
-                        <span class="stat-label">Empleado operativo en</span>
-                    </div>
+                <h2 class="hero-title">Soluciones de IA para Fermoselle Cuenya</h2>
+                <p class="hero-subtitle">Propuestas diseñadas para optimizar tu estudio de arquitectura y reducir los costos de rotación de personal</p>
+                <div class="hero-cta">
+                    <button class="research-btn" onclick="openResearchModal()">Ver investigación de costos</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="problem">
-        <div class="container">
-            <h3 class="section-title">El Problema Real</h3>
+    <!-- Research Modal -->
+    <div id="researchModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeResearchModal()">&times;</span>
+            <h3 class="modal-title">Investigación de Costos - Rotación de Personal</h3>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">$2,738 USD</span>
+                    <span class="stat-label">Costo por rotación actual</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3.5 meses</span>
+                    <span class="stat-label">Tiempo adaptación tradicional</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1 mes</span>
+                    <span class="stat-label">Empleado operativo en</span>
+                </div>
+            </div>
+            
+            <h4 class="problem-section-title">Desglose del Problema</h4>
             <div class="problem-grid">
                 <div class="problem-card">
                     <i class="fas fa-users problem-icon"></i>
@@ -76,7 +83,7 @@
                 <h4>Costo Total Anual: <span>$6,351 USD</span> en pérdidas evitables</h4>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Offers Section -->
     <section class="offers">

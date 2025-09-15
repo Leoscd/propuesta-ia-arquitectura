@@ -1,3 +1,29 @@
+// Modal functions
+function openResearchModal() {
+    document.getElementById('researchModal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeResearchModal() {
+    document.getElementById('researchModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('researchModal');
+    if (event.target === modal) {
+        closeResearchModal();
+    }
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeResearchModal();
+    }
+});
+
 // Toggle offer details
 function toggleDetails(offerId) {
     const details = document.getElementById(offerId);
